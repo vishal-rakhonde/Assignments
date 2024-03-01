@@ -1,0 +1,11 @@
+Q12.What does the following piece of code do:
+	if ((i<10)||(i==15)) {
+	i++;
+	System.out.println(i);
+	}
+
+Ans-->As shown in above code we used if statement where we 
+	given logical or condition that means
+	when the condition will be checked at that that any one condition will be checked
+	and when any of this condition is correct the loop will be executed.
+	after entering in the loop it post increment the value of i and after that it will be printed.

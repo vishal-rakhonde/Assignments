@@ -1,0 +1,10 @@
+10. What is wrong with the following piece of code?
+if (i =10) {
+System.out.println("Success");
+}
+
+Ans-->here we can not assign value in if conditon,
+	if is only used for condition check.
+	it's error so the code will not work.
+
+	

@@ -1,0 +1,25 @@
+/*Assume getnumber(); returns a number entered by a user. What does the following piece of
+code do?
+do {
+int i = getnumber();;
+System.out.println(i);
+} while {i != 0);*/
+
+/*Ans:- In this code there is input from a method i.e. getnumber() ,so the value from the method is 
+assigned to the variable i,
+here we used do while loop which has speciality of executing the loop at first after that
+it checks the condition it means the loop is executed once in any condition.
+the do while loop from above snippet indicates that the loop will be executed until the value of i 
+is equal to zero ,if we didn't give any terminating condition it will be infinite */
+
+//following is the snippet
+class Que7{
+	public static void main(String[] args){
+		
+		int i=50;
+		do{
+			System.out.println(i);
+			i--;
+		}while(i!=0);
+	}
+}

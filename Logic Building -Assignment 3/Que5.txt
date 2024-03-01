@@ -1,0 +1,21 @@
+/*5.Assume getnumber(); returns a number entered by a user. What does the following piece of
+code do?
+
+int i = getnumber();
+while (i < 10) {
+	i++;
+int j = getnumber();
+if (j ==0) {break;}
+else if (j==1) {continue;}
+System.out.println(i);
+}
+System.out.println("finished");
+*/
+Ans-->here getnumber() is method in which user can give input from command line .
+	if the number i is less than 10 then the loop will executed ,either it will print finished.
+	when the loop get executed at that time the i is postincrement then the j is assiened 
+	to the getnumber value.
+	there is if condition occours if j is equal to 0 then it will break the loop and
+	if j is equal to 1 then it will continue the loop after this it will print the i value and
+	print finished.
+	

@@ -1,0 +1,17 @@
+//Q1. What is wrong with the following piece of code?
+
+class Que1{
+	public static void main(String[] Args){
+		int i=10;
+		while(i<5){
+			i++;
+			System.out.println(i);
+		}
+	}
+}
+
+Ans--?In this program we have
+declearted value of i is 10
+and the condition for while loop is that i should 
+be smalled than 5 to execute the loop
+but value is greater than 5 so loop will not executed

@@ -1,0 +1,14 @@
+/*8.
+What does the following program print?
+// This is the Hello Mumbai program in Java
+class HelloMumbai {
+public static void main (String args[]) {
+String name = "Mumbai";
+/* Now let's say hello */
+System.out.println("Hello + name");
+}
+*/
+Ans--> here the classname is HelloMumbai,
+	in this program string is given to name variable i. e. "Mumbai".
+	it will print output--"Hello + name".
+	because sop will print only written in double quotation mark.
