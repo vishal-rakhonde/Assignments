@@ -1,0 +1,170 @@
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.133.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+This message is shown once a day. To disable it please create the
+/home/vishal_rakhonde/.hushlogin file.
+vishal_rakhonde@VISHAL:~$ pwd
+/home/vishal_rakhonde
+vishal_rakhonde@VISHAL:~$ ls
+Mar24  demo.sh  snap  user1  user2
+vishal_rakhonde@VISHAL:~$ Mr24
+Mr24: command not found
+vishal_rakhonde@VISHAL:~$ cd Mar24
+vishal_rakhonde@VISHAL:~/Mar24$ ls
+cdac
+vishal_rakhonde@VISHAL:~/Mar24$ mkdir Linux Assignment
+vishal_rakhonde@VISHAL:~/Mar24$ cd LinuxAssignment
+-bash: cd: LinuxAssignment: No such file or directory
+vishal_rakhonde@VISHAL:~/Mar24$ cd
+vishal_rakhonde@VISHAL:~$ cd .
+vishal_rakhonde@VISHAL:~$ ls
+Mar24  demo.sh  snap  user1  user2
+vishal_rakhonde@VISHAL:~$ cd Mar24
+vishal_rakhonde@VISHAL:~/Mar24$ cd LinuxAssignment
+-bash: cd: LinuxAssignment: No such file or directory
+vishal_rakhonde@VISHAL:~/Mar24$ ls
+Assignment  Linux  cdac
+vishal_rakhonde@VISHAL:~/Mar24$ mkdir LinuxAssignment
+vishal_rakhonde@VISHAL:~/Mar24$ cd LinuxAssignment
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ touch file1.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ mkdir docs
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ pwd
+/home/vishal_rakhonde/Mar24/LinuxAssignment
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cp home/vishal_rakhonde/Mar24/LinuxAssignment/file1.txt
+cp: missing destination file operand after 'home/vishal_rakhonde/Mar24/LinuxAssignment/file1.txt'
+Try 'cp --help' for more information.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cp /home/vishal_rakhonde/Mar24/LinuxAssignment/file1.txt
+cp: missing destination file operand after '/home/vishal_rakhonde/Mar24/LinuxAssignment/file1.txt'
+Try 'cp --help' for more information.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cp file1.txt
+cp: missing destination file operand after 'file1.txt'
+Try 'cp --help' for more information.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ mv file1.txt
+mv: missing destination file operand after 'file1.txt'
+Try 'mv --help' for more information.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ man cp
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cp file1.txt
+cp: missing destination file operand after 'file1.txt'
+Try 'cp --help' for more information.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cp file1.txt docs
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cd docs
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ls
+file1.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ mv file1.txt file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ls
+file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ls -l
+total 0
+-rw-r--r-- 1 vishal_rakhonde vishal_rakhonde 0 Mar  7 18:36 file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ chmod 744 file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ls -l
+total 0
+-rwxr--r-- 1 vishal_rakhonde vishal_rakhonde 0 Mar  7 18:36 file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ find *.txt
+file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ cat >file2.txt
+vishal
+aditya
+Harshadvishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ grep aditya file2.txt
+aditya
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ date
+Thu Mar  7 19:03:33 IST 2024
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ man ip
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ip address
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:83:ea:6e brd ff:ff:ff:ff:ff:ff
+    inet 172.19.67.35/20 brd 172.19.79.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe83:ea6e/64 scope link
+       valid_lft forever preferred_lft forever
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ping hackerrank.com
+PING hackerrank.com (35.174.152.171) 56(84) bytes of data.
+ping google.com
+^C
+--- hackerrank.com ping statistics ---
+256 packets transmitted, 0 received, 100% packet loss, time 265170ms
+
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ man zip
+No manual entry for zip
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ zip file2.txt zip
+Command 'zip' not found, but can be installed with:
+sudo apt install zip
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ sudo apt install zip
+[sudo] password for vishal_rakhonde:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  unzip
+The following NEW packages will be installed:
+  unzip zip
+0 upgraded, 2 newly installed, 0 to remove and 79 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 930 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.2 [175 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 zip amd64 3.0-12build2 [176 kB]
+Fetched 350 kB in 1s (264 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 24216 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-26ubuntu3.2_amd64.deb ...
+Unpacking unzip (6.0-26ubuntu3.2) ...
+Selecting previously unselected package zip.
+Preparing to unpack .../zip_3.0-12build2_amd64.deb ...
+Unpacking zip (3.0-12build2) ...
+Setting up unzip (6.0-26ubuntu3.2) ...
+Setting up zip (3.0-12build2) ...
+Processing triggers for man-db (2.10.2-1) ...
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ zip file2.zip file2.doc
+        zip warning: name not matched: file2.doc
+
+zip error: Nothing to do! (file2.zip)
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ zip file2.zip file2.txt
+  adding: file2.txt (stored 0%)
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ls -l
+total 8
+-rwxr--r-- 1 vishal_rakhonde vishal_rakhonde  21 Mar  7 19:00 file2.txt
+-rw-r--r-- 1 vishal_rakhonde vishal_rakhonde 189 Mar  7 19:16 file2.zip
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ mkdir folder
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ pwd
+/home/vishal_rakhonde/Mar24/LinuxAssignment/docs
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ cd folder
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ unzip /home/vishal_rakhonde/Mar24/LinuxAssignment file2.zip
+unzip:  cannot find or open /home/vishal_rakhonde/Mar24/LinuxAssignment, /home/vishal_rakhonde/Mar24/LinuxAssignment.zip or /home/vishal_rakhonde/Mar24/LinuxAssignment.ZIP.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ man unzip
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ unzip /home/vishal_rakhonde/Mar24/LinuxAssignment/file2.zip
+unzip:  cannot find or open /home/vishal_rakhonde/Mar24/LinuxAssignment/file2.zip, /home/vishal_rakhonde/Mar24/LinuxAssignment/file2.zip.zip or /home/vishal_rakhonde/Mar24/LinuxAssignment/file2.zip.ZIP.
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ pwd
+/home/vishal_rakhonde/Mar24/LinuxAssignment/docs/folder
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ cd ..
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ unzip file2.zip -d folder
+Archive:  file2.zip
+ extracting: folder/file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ cd folder
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ ls -l
+total 4
+-rwxr--r-- 1 vishal_rakhonde vishal_rakhonde 21 Mar  7 19:00 file2.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs/folder$ cd ..
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ cd ..
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ ls -l
+total 4
+drwxr-xr-x 3 vishal_rakhonde vishal_rakhonde 4096 Mar  7 19:22 docs
+-rw-r--r-- 1 vishal_rakhonde vishal_rakhonde    0 Mar  7 18:25 file1.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cat > file1.txt
+vishal
+rakhonde
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ sed -i s/rakhonde/patil/g file1.txt
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$ cat file1.txt
+vishal
+patil
+vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment$
