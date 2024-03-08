@@ -82,13 +82,13 @@ vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ip address
     inet6 ::1/128 scope host
        valid_lft forever preferred_lft forever
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
-    link/ether 00:15:5d:83:ea:6e brd ff:ff:ff:ff:ff:ff
-    inet 172.19.67.35/20 brd 172.19.79.255 scope global eth0
+    link/ether 00:00:00:00:xx:0x brd ff:ff:ff:ff:ff:ff
+    inet 000.00.00.00/00 brd 000.00.00.000 scope global eth0
        valid_lft forever preferred_lft forever
-    inet6 fe80::215:5dff:fe83:ea6e/64 scope link
+    inet6 xx00::000:0xxx:xx00:xx0x/00 scope link
        valid_lft forever preferred_lft forever
 vishal_rakhonde@VISHAL:~/Mar24/LinuxAssignment/docs$ ping hackerrank.com
-PING hackerrank.com (35.174.152.171) 56(84) bytes of data.
+PING hackerrank.com (00.000.000.000) 00(00) bytes of data.
 ping google.com
 ^C
 --- hackerrank.com ping statistics ---
